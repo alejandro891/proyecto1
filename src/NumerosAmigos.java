@@ -22,10 +22,10 @@ public class NumerosAmigos {
             for (int j = 2; j <= i; j++) {
                 if (i % j == 0) {
 
-                    numContadorDivisores ++;
+                    numContadorDivisores = j;
                     
                     if (numContadorDivisores == 1) {
-                        numPrimerDivisor ++;   
+                        numPrimerDivisor = j;   
                     }
                     else if ( numContadorDivisores == 2){
                         numSegundoDivisor ++;
