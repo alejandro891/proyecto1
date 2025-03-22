@@ -15,24 +15,25 @@ int numEmpleados= scanner.nextInt();
 
 int numCobro100_300 = 0;
 int numCobroMas300 =0;
-int numSuma =0;
+int numTotalPagos =0;
 for (int i = 1; i <= numEmpleados; i++) {
     System.out.println("ingrese el sueldo del empleado  " + i );
     int numSueldo = scanner.nextInt();
-    
+    numTotalPagos+=numSueldo;
 
     if ((numSueldo>=100)&(numSueldo<=300)) {
         numCobro100_300 ++;
+        
+        
     }else{
         if (numSueldo>300) {
             numCobroMas300 ++;
             
         }
     }
-    numSuma ++;
 }
-System.out.println("los que cobran entre 100 y 300 son: " + numCobro100_300);
-System.out.println("los que cobran mas e 300 son: " +numCobroMas300);
-System.out.println("el total a pagar es: " );
+    System.out.println("los que cobran entre 100 y 300 son: " + numCobro100_300);
+    System.out.println("los que cobran mas e 300 son: " +numCobroMas300);
+    System.out.println("el total de los pagos es: " +numTotalPagos);
     }
 }
