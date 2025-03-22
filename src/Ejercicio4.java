@@ -6,9 +6,10 @@ public class Ejercicio4 {
         //Ingresar el sueldo de una persona, si supera los 3000 dolares mostrar un
         //mensaje en pantalla indicando que debe abonar impuestos.
 
+        final int numLIMITE=3000;
         System.out.println("ingrese su sueldo");
         int numSueldo = scanner.nextInt();
-        final int num_MONTO = 3000;
+        final int num_MONTO = numLIMITE;
 
         if (numSueldo>num_MONTO) {
             System.out.println("debe abonar impuestos");
