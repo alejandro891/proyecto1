@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ValidadorNumerosAmigos {
+public class NumerosAmigos {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
